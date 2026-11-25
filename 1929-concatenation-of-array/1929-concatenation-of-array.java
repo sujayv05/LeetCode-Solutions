@@ -4,9 +4,7 @@ class Solution {
         int[] nums2 = new int[2 * n];
         for(int i = 0; i < n; i++){
             nums2[i] = nums[i];
-        }
-        for(int i = n; i < 2 * n; i++){
-            nums2[i] = nums[i -n];
+            nums2[n + i] = nums[i];
         }
         return nums2; 
         
